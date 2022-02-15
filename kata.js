@@ -10,8 +10,8 @@ function getGreeting (name) {
 
 // ageOneYear should return a new object with an `age` property 1 greater
 // than the `age` property of `obj`
-function ageOneYear (obj, newObj) {
-  newObj = obj
+function ageOneYear (obj) {
+  const newObj = {}
   newObj.age = obj.age + 1
   return newObj
 }
@@ -22,7 +22,10 @@ function ageOneYear (obj, newObj) {
 //   key: value
 // }
 function makeObject (key, value) {
-
+  const obj = {
+    key: value
+  }
+  return obj
 }
 
 // getPropertyValue should return the value of the
