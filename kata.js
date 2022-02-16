@@ -81,6 +81,11 @@ function getValues (obj) {
 // `item`. For example, makeArrayOfItem('foo', 2) would return:
 // ['foo', 'foo']
 function makeArrayOfItem (item, length) {
+  let array = []
+  for (let i = 0; i < length; i++) {
+    array.push(item)
+  }
+  return array
 }
 
 // makeArrayOfItems should return an array containing all arguments passed to it
