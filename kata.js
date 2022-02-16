@@ -98,6 +98,7 @@ function makeArrayOfItems (...theArgs) {
 // otherwise it should return false.
 // Tip: there is an array function that makes this straightforward
 function hasItem (arr, item) {
+  return arr.includes(item)
 }
 
 // getItemAtIndex should return arr[idx] but only if that index exists:
