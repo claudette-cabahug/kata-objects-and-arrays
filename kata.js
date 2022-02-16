@@ -104,7 +104,13 @@ function hasItem (arr, item) {
 // getItemAtIndex should return arr[idx] but only if that index exists:
 // if it doesn't, return a JavaScript Error object.
 function getItemAtIndex (arr, idx) {
+  if (idx in arr) {
+    return arr[idx]
+  } else {
+  return new Error ()
+  }
 }
+
 
 // replaceItemAtIndex should return a copy of `arr` with
 // the element at `idx` replaced with `item`
