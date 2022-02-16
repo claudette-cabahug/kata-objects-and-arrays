@@ -139,6 +139,9 @@ function insertItemAtIndex (arr, item, idx) {
 // deleteItemAtIndex should return a copy of `arr` without
 // the element at `idx` (the array should get shorter).
 function deleteItemAtIndex (arr, idx) {
+  let newArray = [...arr]
+  newArray.splice(idx, 1)
+  return newArray
 }
 
 // deleteItem should return an array with every instance of `item` removed
