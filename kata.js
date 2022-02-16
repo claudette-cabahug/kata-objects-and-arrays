@@ -46,9 +46,9 @@ function addName (obj, name) {
 // that matches the `key` parameter
 // Tip: consider JavaScript's `delete` operator
 function deleteProperty (obj, key) {
-  // let newObj = {...obj}
-  // delete newObj[key]
-  // return newObj
+  let newObj = {...obj}
+  delete newObj[key]
+  return newObj
 }
 
 // returnErrorIfFalsy should return a JavaScript Error object with message:
