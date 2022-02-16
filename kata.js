@@ -70,6 +70,7 @@ function getKeys (obj) {
 // getValues should return an array of the object's own values
 // For example, given { foo: 1, bar: 2 } it would return [1, 2]
 function getValues (obj) {
+  return Object.values(obj)
 }
 
 /**
