@@ -56,6 +56,9 @@ function deleteProperty (obj, key) {
 // if val evaluates to false
 // Tip: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
 function returnErrorIfFalsy (val) {
+  if (!val) {
+    return new Error('Oh no, an error!')
+  }
 }
 
 // keys should return an array of the object's property names (keys)
