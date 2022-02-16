@@ -111,16 +111,21 @@ function getItemAtIndex (arr, idx) {
   }
 }
 
-
 // replaceItemAtIndex should return a copy of `arr` with
 // the element at `idx` replaced with `item`
 // Tip: consider the array literal spread syntax
 function replaceItemAtIndex (arr, idx, item) {
+  let newArray = [...arr]
+  newArray[idx] = item
+  return newArray
 }
 
 // insertItemAtIndex should return a copy of `arr` with `item` inserted at
 // `idx` without overwriting any array values (the array should get longer)
 function insertItemAtIndex (arr, item, idx) {
+  // let newArray = [...arr]
+  // newArray.splice(idx, item)
+  // return newArray
 }
 
 // deleteItemAtIndex should return a copy of `arr` without
