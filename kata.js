@@ -173,13 +173,21 @@ function unzipObject (obj) {
 // it will return:
 //   {b: 2, c: 3}
 function findOneByProperty (arr, search) {
+  return arr.find(e => 
+    Object.entries(e)
+      .find(([key, value]) => search[key] === value))
 }
 
 // findAll should return an array containing all objects in `arr` that
 // have the property and value of `search`
 function findAll (arr, search) {
-
 }
+
+// The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+
+// The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs.
+
+// The find() method returns the value of the first element in the provided array that satisfies the provided testing function.
 
 module.exports = {
   addName,
