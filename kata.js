@@ -164,6 +164,7 @@ function zipObject (keys, values) {
 // For example, given {foo: 1, bar: 2} it would return
 // [['foo', 1], ['bar', 2]]
 function unzipObject (obj) {
+  return Object.entries(obj)
 }
 
 // findOneByProperty should return an object from `arr` that has the
