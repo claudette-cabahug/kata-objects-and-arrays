@@ -181,6 +181,9 @@ function findOneByProperty (arr, search) {
 // findAll should return an array containing all objects in `arr` that
 // have the property and value of `search`
 function findAll (arr, search) {
+  return arr.filter(e => 
+    Object.entries(e)
+      .find(([key, value]) => search[key] === value))
 }
 
 // The filter() method creates a new array with all elements that pass the test implemented by the provided function.
